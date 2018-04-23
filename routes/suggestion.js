@@ -3,7 +3,7 @@ var router = express.Router();
 var mongoose = require('mongoose');
 var Suggestion = require('../models/Suggestion.js');
 
-/* GET ALL BOOKS */
+/* GET ALL Suggestions */
 router.get('/', function(req, res, next) {
     Suggestion.find(function (err, products) {
         if (err) return next(err);
@@ -11,7 +11,7 @@ router.get('/', function(req, res, next) {
     });
 });
 
-/* GET SINGLE BOOK BY ID */
+/* GET SINGLE Suggestion BY ID */
 router.get('/:id', function(req, res, next) {
     Suggestion.findById(req.params.id, function (err, post) {
         if (err) return next(err);
@@ -19,7 +19,7 @@ router.get('/:id', function(req, res, next) {
     });
 });
 
-/* SAVE BOOK */
+/* SAVE Suggestion */
 router.post('/', function(req, res, next) {
     Suggestion.create(req.body, function (err, post) {
         if (err) return next(err);
@@ -27,7 +27,7 @@ router.post('/', function(req, res, next) {
     });
 });
 
-/* UPDATE BOOK */
+/* UPDATE Suggestion */
 router.put('/:id', function(req, res, next) {
     Suggestion.findByIdAndUpdate(req.params.id, req.body, function (err, post) {
         if (err) return next(err);

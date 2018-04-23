@@ -11,6 +11,7 @@ import { HttpClient } from '@angular/common/http';
 export class SuggestionCreateComponent implements OnInit {
 
     suggestion = {};
+
   constructor(private http: HttpClient, private router: Router) { }
 
   ngOnInit() {
