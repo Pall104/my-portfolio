@@ -1,9 +1,41 @@
+body {
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+    /*background-image : url("https://image.freepik.com/free-vector/plain-red-blurred-background_1035-3332.jpg");*/
+}
+
+#canvas{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.container{
+    display: flex;
+    height: 592px;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.img{
+    border-radius: 50%;
+}
+.box{
+    background-color: #151313;
+    color: #f9f8f8;
+    height: 200px;
+    width: 589px;
+    border-radius: 10px;
+    border: 7px solid white;
+}
 .main{
     text-align:center;
     background-color: #ffc107c7;
 }
 .nav{
-    background-color: black;
+    background-color: #222;
     padding-bottom: 50px;
     padding-top: 33px;
     text-align: center;
@@ -13,7 +45,7 @@
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: black;
+    background-color:#222;
     font-size: 25px;
 }
 .plus-sign{
@@ -58,3 +90,4 @@ h1{
     margin: 32px 0;
     margin-right: 64%;
 }
+
