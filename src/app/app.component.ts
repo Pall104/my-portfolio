@@ -8,8 +8,10 @@ import {Component, OnInit} from '@angular/core';
 export class AppComponent implements OnInit {
     title = 'app';
 
-    ngOnInit(){
+    ngOnInit() {
       randomFunction();
+      // openNav();
+      // closeNav();
     }
 
 }
@@ -40,9 +42,9 @@ function randomFunction() {
     canvas.height = H;
 
 // Some variables for later use
-    const particleCount = 70;
+    const particleCount = 50;
     const particles = [];
-    const minDist = 120;
+    const minDist = 100;
     // tslint:disable-next-line:prefer-const
     let dist;
 
@@ -78,12 +80,12 @@ function randomFunction() {
 
         // We would also need some velocity for the particles
         // so that they can move freely across the space
-        this.vx = -1 + Math.random() * 2;
-        this.vy = -1 + Math.random() * 2;
+        this.vx = -1 + Math.random() * 5;
+        this.vy = -1 + Math.random() * 5;
 
         // Now the radius of the particles. I want all of
         // them to be equal in size so no Math.random() here..
-        this.radius = 4;
+        this.radius = 3;
 
         // This is the method that will draw the Particle on the
         // canvas. It is using the basic fillStyle, then we start
@@ -96,7 +98,7 @@ function randomFunction() {
         // whether the arc is to be drawn in counter clockwise or
         // in a clockwise direction. False for clockwise.
         this.draw = function () {
-            ctx.fillStyle = 'white';
+            ctx.fillStyle = '#ffc107c7';
             ctx.beginPath();
             ctx.arc(this.x, this.y, this.radius, 0, Math.PI * 4, false);
 
@@ -214,4 +216,15 @@ function randomFunction() {
     }
 
     animloop();
+
+
 }
+
+function openNav() {
+    document.getElementById('mySidenav').style.width = '250px';
+}
+
+function closeNav() {
+    document.getElementById('mySidenav').style.width = '0';
+}
+
