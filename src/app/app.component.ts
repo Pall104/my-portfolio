@@ -42,7 +42,7 @@ function randomFunction() {
     canvas.height = H;
 
 // Some variables for later use
-    const particleCount = 180;
+    const particleCount = 70;
     const particles = [];
     const minDist = 100;
     // tslint:disable-next-line:prefer-const
