@@ -27,6 +27,7 @@
     max-width: 100%;
     /*margin-right: 60%;*/
     margin-bottom: 4px;
+    margin-top: 200px;
 }
 .box{
     background-color: #222;
@@ -49,9 +50,11 @@
     padding-bottom: 50px;
     padding-top: 33px;
     text-align: center;
-    width: 90%;
     max-width: 100%;
     margin-bottom: 15px;
+    position: fixed;
+    top: 0;
+    width: 100%;
 }
 .list{
     list-style-type: none;

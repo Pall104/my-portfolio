@@ -42,7 +42,7 @@ function randomFunction() {
     canvas.height = H;
 
 // Some variables for later use
-    const particleCount = 50;
+    const particleCount = 180;
     const particles = [];
     const minDist = 100;
     // tslint:disable-next-line:prefer-const
@@ -80,8 +80,8 @@ function randomFunction() {
 
         // We would also need some velocity for the particles
         // so that they can move freely across the space
-        this.vx = -1 + Math.random() * 5;
-        this.vy = -1 + Math.random() * 5;
+        this.vx = -1 + Math.random() * 2;
+        this.vy = -1 + Math.random() * 2;
 
         // Now the radius of the particles. I want all of
         // them to be equal in size so no Math.random() here..
