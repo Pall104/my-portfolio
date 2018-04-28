@@ -24,14 +24,14 @@ function randomFunction() {
     const resizeReset = function() {
         w = canvasBody.width = window.innerWidth;
         h = canvasBody.height = window.innerHeight;
-    }
+    };
 
     const opts = {
-        particleColor: 'rgb(200 , 200 , 200)',
+        particleColor: '(0,0,255)',
         lineColor: 'rgb(200,200,200)',
-        particleAmount: 30,
-        defaultSpeed: 1,
-        variantSpeed: 1,
+        particleAmount: 70,
+        defaultSpeed:  2,
+        variantSpeed:  5,
         defaultRadius: 2,
         variantRadius: 2,
         linkRadius: 200,
@@ -48,11 +48,11 @@ function randomFunction() {
         }, delay);
     };
 
-    const checkDistance = function(x1, y1, x2, y2){
+    const checkDistance = function(x1, y1, x2, y2) {
         return Math.sqrt(Math.pow(x2 - x1, 2) + Math.pow(y2 - y1, 2));
     };
 
-    const linkPoints = function(point1, hubs){
+    const linkPoints = function(point1, hubs) {
         for (let i = 0; i < hubs.length; i++) {
             const distance = checkDistance(point1.x, point1.y, hubs[i].x, hubs[i].y);
             const opacity = 1 - distance / opts.linkRadius;
@@ -66,9 +66,9 @@ function randomFunction() {
                 drawArea.stroke();
             }
         }
-    }
+    };
 
-    Particle = function(xPos, yPos){
+    Particle = function(xPos, yPos) {
         this.x = Math.random() * w;
         this.y = Math.random() * h;
         this.speed = opts.defaultSpeed + Math.random() * opts.variantSpeed;
@@ -79,7 +79,7 @@ function randomFunction() {
             x: Math.cos(this.directionAngle) * this.speed,
             y: Math.sin(this.directionAngle) * this.speed
         };
-        this.update = function(){
+        this.update = function() {
             this.border();
             this.x += this.vector.x;
             this.y += this.vector.y;
@@ -114,7 +114,7 @@ function randomFunction() {
         window.requestAnimationFrame(loop);
     }
 
-    function loop(){
+    function loop() {
         window.requestAnimationFrame(loop);
         drawArea.clearRect(0, 0 , w , h);
         for (let i = 0; i < particles.length; i++) {
