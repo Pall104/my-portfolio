@@ -17,7 +17,6 @@ export class AppComponent implements OnInit {
 }
 
 function randomFunction() {
-
     let w;
     let h;
     let particles;
@@ -25,10 +24,10 @@ function randomFunction() {
     const resizeReset = function() {
         w = canvasBody.width = window.innerWidth;
         h = canvasBody.height = window.innerHeight;
-    };
+    }
 
     const opts = {
-        particleColor: 'rgb(200,200,200)',
+        particleColor: 'rgb(200 , 200 , 200)',
         lineColor: 'rgb(200,200,200)',
         particleAmount: 30,
         defaultSpeed: 1,
@@ -67,11 +66,9 @@ function randomFunction() {
                 drawArea.stroke();
             }
         }
-    };
+    }
 
-    Particle = function() {
-        w =  canvasBody.width = window.innerWidth;
-        h =  canvasBody.width = window.innerWidth;
+    Particle = function(xPos, yPos){
         this.x = Math.random() * w;
         this.y = Math.random() * h;
         this.speed = opts.defaultSpeed + Math.random() * opts.variantSpeed;
@@ -82,26 +79,26 @@ function randomFunction() {
             x: Math.cos(this.directionAngle) * this.speed,
             y: Math.sin(this.directionAngle) * this.speed
         };
-        this.update = function() {
+        this.update = function(){
             this.border();
             this.x += this.vector.x;
             this.y += this.vector.y;
         };
-        this.border = function() {
+        this.border = function(){
             if (this.x >= w || this.x <= 0) {
                 this.vector.x *= -1;
             }
             if (this.y >= h || this.y <= 0) {
                 this.vector.y *= -1;
             }
-            if (this.x > w) {this.x = w; }
+            if (this.x > w) { this.x = w; }
             if (this.y > h) {this.y = h; }
             if (this.x < 0) {this.x = 0; }
             if (this.y < 0) {this.y = 0; }
         };
         this.draw = function() {
             drawArea.beginPath();
-            drawArea.arc(this.x, this.y, this.radius, 0, Math.PI*2);
+            drawArea.arc(this.x, this.y, this.radius, 0, Math.PI * 2);
             drawArea.closePath();
             drawArea.fillStyle = this.color;
             drawArea.fill();
@@ -117,12 +114,9 @@ function randomFunction() {
         window.requestAnimationFrame(loop);
     }
 
-    function loop() {
-         particles = [];
-         w =  window.innerWidth;
-         h =  window.innerHeight;
+    function loop(){
         window.requestAnimationFrame(loop);
-        drawArea.clearRect(0 , 0 , w , h);
+        drawArea.clearRect(0, 0 , w , h);
         for (let i = 0; i < particles.length; i++) {
             particles[i].update();
             particles[i].draw();
