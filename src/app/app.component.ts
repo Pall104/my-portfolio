@@ -27,11 +27,11 @@ function randomFunction() {
     };
 
     const opts = {
-        particleColor: '(0,0,255)',
+        particleColor: '(255,255,0)',
         lineColor: 'rgb(200,200,200)',
-        particleAmount: 70,
+        particleAmount: 80,
         defaultSpeed:  2,
-        variantSpeed:  5,
+        variantSpeed:  2,
         defaultRadius: 2,
         variantRadius: 2,
         linkRadius: 200,
