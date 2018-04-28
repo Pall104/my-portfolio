@@ -5,15 +5,28 @@
     /*!*background-image : url("https://image.freepik.com/free-vector/plain-red-blurred-background_1035-3332.jpg");*!*/
 /*}*/
 
-#canvas{
+/*#canvas{*/
+    /*position: absolute;*/
+    /*top: 0;*/
+    /*left: 0;*/
+    /*z-index: -1;*/
+    /*height: 200% !important;*/
+    /*width: 100% !important;*/
+/*}*/
+
+body {
+    background: #222;
+    margin: 0rem;
+    min-height: 100vh;
+    font-family: Futura, sans-serif;
+}
+#canvas, #text {
     position: absolute;
+    display: block;
     top: 0;
     left: 0;
     z-index: -1;
-    height: 200% !important;
-    width: 100% !important;
 }
-
 .container{
     display: flex;
     height: 600px;
