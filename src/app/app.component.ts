@@ -27,14 +27,14 @@ function randomFunction() {
     };
 
     const opts = {
-        particleColor: '(255,255,0)',
-        lineColor: 'rgb(200,200,200)',
-        particleAmount: 80,
-        defaultSpeed:  2,
-        variantSpeed:  2,
+        particleColor: 'rgb(255,255,255)',
+        lineColor: 'rgb(192,192,192)',
+        particleAmount: 60,
+        defaultSpeed:  1,
+        variantSpeed:  1,
         defaultRadius: 2,
         variantRadius: 2,
-        linkRadius: 200,
+        linkRadius: 180,
     };
 
     window.addEventListener('resize', function() {
