@@ -6,6 +6,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { RouterModule, Routes } from '@angular/router';
 
 import { AppComponent } from './app.component';
+
 // import { SuggestionCreateComponent } from './suggestion-create/suggestion-create.component';
 
 const appRoutes: Routes = [
@@ -24,12 +25,12 @@ const appRoutes: Routes = [
   ],
   imports: [
     BrowserModule,
-      // FormsModule,
-      // HttpClientModule,
-      // RouterModule.forRoot(
-      //     appRoutes,
-      //     { enableTracing: true } // <-- debugging purposes only
-      // )
+      FormsModule,
+      HttpClientModule,
+      RouterModule.forRoot(
+          appRoutes,
+          { enableTracing: true } // <-- debugging purposes only
+      )
   ],
   providers: [],
   bootstrap: [AppComponent]
