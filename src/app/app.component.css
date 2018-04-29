@@ -150,3 +150,14 @@ h1{
     align-items: center;
     padding-right: 10px
 }
+.chart{
+    /*padding-top: 50px;*/
+}
+.calendar{
+    width: 784px;
+    border: 1px solid #DDDDDD;
+    border-radius: 3px;
+    min-height: 31%;
+    text-align: center;
+    margin: 0 auto;
+}
