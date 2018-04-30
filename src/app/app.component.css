@@ -132,7 +132,7 @@ h1{
     color: white;
 }
 .fa-github {
-    background: #00bcd4ba;
+    background: #1998b9;
     color: #e4dddd;
 }
 .fa {
@@ -157,7 +157,8 @@ h1{
     padding-right: 10px
 }
 .chart{
-    /*padding-top: 50px;*/
+    width: 96%;
+    max-width: 90%;
 }
 .calendar{
     width: 85%;
