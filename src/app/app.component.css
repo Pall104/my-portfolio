@@ -25,7 +25,6 @@ body {
     border-radius: 23%;
     width: 16%;
     max-width: 100%;
-    /*margin-right: 60%;*/
     margin-bottom: 4px;
     margin-top: 200px;
     margin-left: 42%;
@@ -33,7 +32,7 @@ body {
 .box{
     background-color: #222;
     color: white;
-    height: 200px;
+    height: 100%;
     width: 85%;
     max-width: 90%;
     border-radius: 7px;
@@ -162,12 +161,13 @@ h1{
 }
 .calendar{
     width: 85%;
-    border: 1px solid #DDDDDD;
-    border-radius: 3px;
     min-height: 43%;
     text-align: center;
     margin: 0 auto;
+    border: 2px solid white;
+    border-radius: 6px;
 }
+
 .fa{
     color : white;
 }
