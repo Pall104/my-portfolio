@@ -29,6 +29,13 @@ body {
     margin-top: 200px;
     margin-left: 42%;
 }
+.img:hover {
+    animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+    transform: translate3d(0, 0, 0);
+    backface-visibility: hidden;
+    perspective: 1000px;
+}
+
 .box{
     background-color: #222;
     color: white;
@@ -145,7 +152,19 @@ h1{
 }
 
 .fa:hover {
+    -webkit-animation: shake 0.1s ease-in-out 0.1s infinite alternate;
     opacity: 0.7;
+}
+
+@-webkit-keyframes shake {
+    from {
+        -webkit-transform: rotate(10deg);
+    }
+    to {
+        -webkit-transform-origin:center center;
+        -webkit-transform: rotate(-10deg);
+    }
+
 }
 .footer{
     margin-top: 94px;
