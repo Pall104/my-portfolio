@@ -1,4 +1,5 @@
-import {Component, OnInit} from '@angular/core';
+import {Component, OnInit, ViewChild , ElementRef} from '@angular/core';
+declare let GitHubCalendar: any;
 
 @Component({
     selector: 'app-root',
@@ -7,11 +8,14 @@ import {Component, OnInit} from '@angular/core';
 })
 export class AppComponent implements OnInit {
     title = 'app';
+    @ViewChild('calendar') calendar: ElementRef;
+    private username = 'Pall104';
 
     ngOnInit() {
       randomFunction();
-      // openNav();
-      // closeNav();
+        GitHubCalendar('#' + this.calendar.nativeElement.id, this.username).then(data => {
+            console.log('\n\ndata inside GitHubCalendar: ', data);
+        });
     }
 
 }
@@ -20,7 +24,7 @@ function randomFunction() {
     let w;
     let h;
     let particles;
-    let Particle;
+    let Particle;;
     const resizeReset = function() {
         w = canvasBody.width = window.innerWidth;
         h = canvasBody.height = window.innerHeight;
