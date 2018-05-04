@@ -180,11 +180,22 @@ h1{
 }
 .calendar{
     width: 85%;
-    min-height: 43%;
+    min-height: 52%;
     text-align: center;
     margin: 0 auto;
     border: 2px solid white;
     border-radius: 6px;
+    color: white;
+}
+.text-muted {
+    color: white !important;
+}
+.contrib-number {
+    font-weight: 300;
+    line-height: 1.3em;
+    font-size: 24px;
+    display: block;
+    color: white;
 }
 
 .fa{
