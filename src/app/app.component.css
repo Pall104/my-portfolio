@@ -201,3 +201,9 @@ h1{
 hr{
     border-top: 3px solid #eee;
 }
+.info{
+    width: 85%;
+    height: 50%;
+    border: 2px solid white;
+    margin-bottom: 18px;
+}
