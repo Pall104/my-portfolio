@@ -187,9 +187,6 @@ h1{
     border-radius: 6px;
     color: white;
 }
-.text-muted {
-    color: white !important;
-}
 .contrib-number {
     font-weight: 300;
     line-height: 1.3em;
