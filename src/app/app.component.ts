@@ -12,7 +12,7 @@ export class AppComponent implements OnInit {
     private username = 'Pall104';
 
     ngOnInit() {
-      randomFunction();
+        randomFunction();
         GitHubCalendar('#' + this.calendar.nativeElement.id, this.username).then(data => {
             console.log('\n\ndata inside GitHubCalendar: ', data);
         });
@@ -47,7 +47,7 @@ function randomFunction() {
 
     const deBouncer = function() {
         clearTimeout(tid);
-         setTimeout(function() {
+        setTimeout(function() {
             resizeReset();
         }, delay);
     };
