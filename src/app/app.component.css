@@ -209,3 +209,8 @@ hr{
     padding: 14px 16px 14px 16px;
     color:white;
 }
+@media only screen and (max-width: 1026px) {
+    #calendar {
+        display: none;
+    }
+}
