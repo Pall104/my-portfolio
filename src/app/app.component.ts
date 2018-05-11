@@ -19,7 +19,6 @@ export class AppComponent implements OnInit {
     }
 
 }
-
 function randomFunction() {
     let w;
     let h;
@@ -40,7 +39,6 @@ function randomFunction() {
         variantRadius: 2,
         linkRadius: 180,
     };
-
     window.addEventListener('resize', function() {
         deBouncer();
     });
@@ -55,7 +53,6 @@ function randomFunction() {
     const checkDistance = function(x1, y1, x2, y2) {
         return Math.sqrt(Math.pow(x2 - x1, 2) + Math.pow(y2 - y1, 2));
     };
-
     const linkPoints = function(point1, hubs) {
         for (let i = 0; i < hubs.length; i++) {
             const distance = checkDistance(point1.x, point1.y, hubs[i].x, hubs[i].y);
