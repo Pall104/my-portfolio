@@ -30,14 +30,14 @@ function randomFunction() {
     };
 
     const opts = {
-        particleColor: 'rgb(255,255,255)',
-        lineColor: 'rgb(192,192,192)',
-        particleAmount: 60,
-        defaultSpeed:  1,
-        variantSpeed:  1,
+        particleColor: 'rgb(200,200,200)',
+        lineColor: 'rgb(200,200,200)',
+        particleAmount: 20,
+        defaultSpeed: 1,
+        variantSpeed: 1,
         defaultRadius: 2,
         variantRadius: 2,
-        linkRadius: 180,
+        linkRadius: 200
     };
     window.addEventListener('resize', function() {
         deBouncer();
