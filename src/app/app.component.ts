@@ -27,9 +27,7 @@ function randomFunction() {
     const resizeReset = function() {
         w = canvasBody.width = window.innerWidth;
         h = canvasBody.height = window.innerHeight;
-        // h = canvasBody.height = window.screen.height;
     };
-
     const opts = {
         particleColor: 'rgb(200,200,200)',
         lineColor: 'rgb(200,200,200)',
@@ -40,7 +38,6 @@ function randomFunction() {
         variantRadius: 2,
         linkRadius: 200
     };
-
     window.addEventListener('resize', function() {
         deBouncer();
     });
