@@ -17,7 +17,6 @@ export class AppComponent implements OnInit {
             console.log('\n\ndata inside GitHubCalendar: ', data);
         });
     }
-
 }
 function randomFunction() {
     let w;
@@ -31,8 +30,8 @@ function randomFunction() {
     const opts = {
         particleColor: 'rgb(200,200,200)',
         lineColor: 'rgb(200,200,200)',
-        particleAmount: 20,
-        defaultSpeed: 1,
+        particleAmount: 40,
+        defaultSpeed: 2,
         variantSpeed: 1,
         defaultRadius: 2,
         variantRadius: 2,
