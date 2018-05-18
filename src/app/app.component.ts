@@ -30,7 +30,7 @@ function randomFunction() {
     const opts = {
         particleColor: 'rgb(200,200,200)',
         lineColor: 'rgb(200,200,200)',
-        particleAmount: 40,
+        particleAmount: 35,
         defaultSpeed: 2,
         variantSpeed: 1,
         defaultRadius: 2,
